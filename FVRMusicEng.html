@@ -1,0 +1,230 @@
+<style>
+    /*body is classified for the main page*/
+        body {
+            background-color: #000000;
+            color: white;
+            overflow-x: hidden;
+            font-family: "Orbitron", sans-serif;
+    }
+    
+    /*right I classified so I can align certain text to the right of the screen*/
+        .right {
+            text-align: right;
+            vertical-align: middle;
+    }
+    
+    /*center I classified so I can align certain text to the center of the screen*/
+        .center {
+            text-align: center;
+            vertical-align: middle;
+    }
+    /*testing-dropdown is the row of dropdowns*/
+        .dropdown {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+    }
+    /*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+        .footer{
+            margin-top: 20px;
+            text-align: center;
+    }
+    
+    /*container I made to allow the drop down boxes to be centered and attached to the title text*/
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .footer{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .custom-link {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        font-weight: bold; /* Makes it stand out */
+        cursor: pointer; /* Keeps it clickable */
+    }
+
+    .sociallinks {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+    .email {
+        margin-left: 215px;
+}
+
+.insta {
+    margin-left: 215px;
+}
+
+.tiktok {
+    margin-left: 215px;
+}
+
+.custom-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color */
+    font-weight: bold; /* Makes it stand out */
+    cursor: pointer; /* Keeps it clickable */
+}
+
+.custom-link_secondary {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color */
+    cursor: pointer; /* Keeps it clickable */
+}
+
+.top1 {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.top2 {
+position: absolute;
+top: 10;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 155px;
+box-sizing: border-box;
+}
+
+.top3 {
+position: absolute;
+top: 10;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 292px;
+box-sizing: border-box;
+}
+
+.top4 {
+position: absolute;
+top: 10;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 572px;
+box-sizing: border-box;
+}
+
+.top5 {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 743px;
+    box-sizing: border-box;
+    }
+
+.top6 {
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    }
+
+    .top7 {
+        position: absolute;
+        top: 10;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 972px;
+        box-sizing: border-box;
+    }
+
+
+    nav a {
+        display: inline-block; /* Makes the background wrap around text */
+        background-color: rgba(255, 0, 0, 0.2); /* Black with transparency */
+        color: white; /* Text color */
+        padding: 10px 15px; /* Space inside the box */
+        border-radius: 5px; /* Rounded edges */
+        text-decoration: none; /* Removes underline */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+    
+    nav a:hover {
+        background-color: #8B0000; /* Red hover effect */
+    }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <nav>
+<label for="Home">
+    <p class="top1" style="font-size: 30px;"><a href = "index.html" class="custom-link">Home</a></p>
+    </label>
+    
+    <label for="About">
+    <p class="top2" style="font-size: 30px;"><a href = "FVRMusicAb.html" class="custom-link_secondary">About</a></p>
+    </label>
+    
+    <label for="New Releases">
+    <p class="top3" style="font-size: 30px;"><a href = "FVRMusicNewRel.html" class="custom-link_secondary">New Releases</a></p>
+    </label>
+    
+    <label for="Contact">
+    <p class="top4" style="font-size: 30px;"><a href = "FVRMusicEng.html" class="custom-link_secondary">Contact</a></p>
+    </label>
+
+    <label for="Listen Now">
+    <p class="top5" style="font-size: 30px;"><a href = "FVRMusicPlat.html" class="custom-link_secondary">Listen Now</a></p>
+    </label>
+
+    <label for="Creation">
+        <p class="top7" style="font-size: 30px;"><a href = "FVRMusicCr.html" class="custom-link_secondary">Creation</a></p>
+        </label>
+</nav>
+
+<div class="sociallinks">
+    <div>
+        <p class="no-wrap" style="font-size: 60px; color: #8B0000;"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_email.png" alt="Email Link" width="200" height="200"><b>Email</b></p>
+        <p class="email" style="font-size: 30px; color: #8B0000;"><a href="mailto:wesrussell928@gmail.com">FVR Email</a></p>
+
+        <p class="no-wrap" style="font-size: 60px; color: #8B0000;"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_insta.png" alt="Instagram Link" width="200" height="200"><b>Instagram</b></p>
+        <p class="insta" style="font-size: 30px; color: #8B0000;"><a href="https://www.instagram.com/11wes12/">FVR Instagram</a></p>
+
+        <p class="no-wrap" style="font-size: 60px; color: #8B0000;"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_tiktok.png" alt="TikTok Link" width="200" height="200"><b>TikTok</b></p>
+        <p class="tiktok" style="font-size: 30px; color: #8B0000;"><a href="https://www.tiktok.com/@jadelyns_man">FVR TikTok</a></p>
+
+
+    </div>
+</div>
+
+<footer>
+    <p class = "center" style="font-size: 30px; color: #FF1493;"><a href = "index.html" class="custom-link">Back</a></p>
+    <p class="right" style="color: #FF1493;">&copy; FVRMusic</p>
+</footer>
+

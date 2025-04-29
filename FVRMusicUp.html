@@ -1,0 +1,155 @@
+<style>
+    /*body is classified for the main page*/
+        body {
+            background-color: #8000FF;
+            color: white;
+            overflow-x: hidden;
+            font-family: "Orbitron", sans-serif;
+    }
+    
+    /*right I classified so I can align certain text to the right of the screen*/
+        .right {
+            text-align: right;
+            vertical-align: middle;
+    }
+    
+    /*center I classified so I can align certain text to the center of the screen*/
+        .center {
+            text-align: center;
+            vertical-align: middle;
+    }
+    /*testing-dropdown is the row of dropdowns*/
+        .dropdown {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+    }
+    /*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+        .footer{
+            margin-top: 20px;
+            text-align: center;
+    }
+    
+    /*container I made to allow the drop down boxes to be centered and attached to the title text*/
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+    
+        .top1 {
+            position: absolute;
+            top: 26;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            margin-left: 20px;
+            box-sizing: border-box;
+    }
+    
+    .top2 {
+        position: absolute;
+        top: 26;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 150px;
+        box-sizing: border-box;
+    }
+    
+    .top3 {
+        position: absolute;
+        top: 26;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 282px;
+        box-sizing: border-box;
+    }
+    
+    .top4 {
+        position: absolute;
+        top: 26;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 557px;
+        box-sizing: border-box;
+    }
+    
+    .top5 {
+        position: absolute;
+        top: 26;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 722px;
+        box-sizing: border-box;
+    }
+
+    .custom-link {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        font-weight: bold; /* Makes it stand out */
+        cursor: pointer; /* Keeps it clickable */
+    }
+    
+    .custom-link_secondary {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        cursor: pointer; /* Keeps it clickable */
+    }
+    
+    nav a {
+        display: inline-block; /* Makes the background wrap around text */
+        background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+        color: white; /* Text color */
+        padding: 10px 15px; /* Space inside the box */
+        border-radius: 5px; /* Rounded edges */
+        text-decoration: none; /* Removes underline */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+    
+    nav a:hover {
+        background-color: #00FFFF; /* Red hover effect */
+    }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <nav>
+        <label for="Home">
+        <p class="top1" style="font-size: 30px;"><a href = "index.html" class="custom-link">Home</a></p>
+        </label>
+        
+        <label for="About">
+        <p class="top2" style="font-size: 30px;"><a href = "FVRMusicAb.html" class="custom-link_secondary">About</a></p>
+        </label>
+        
+        <label for="New Releases">
+        <p class="top3" style="font-size: 30px;"><a href = "FVRMusicNewRel.html" class="custom-link_secondary">New Releases</a></p>
+        </label>
+        
+        <label for="Contact">
+        <p class="top4" style="font-size: 30px;"><a href = "FVRMusicEng.html" class="custom-link_secondary">Contact</a></p>
+        </label>
+        
+        <label for="Listen Now">
+        <p class="top5" style="font-size: 30px;"><a href = "FVRMusicPlat.html" class="custom-link_secondary">Listen Now</a></p>
+        </label>
+        </nav>
+
+        <p>This will show the upcoming projects, future albums and songs.</p>
+
+        <footer>
+            <p class = "center" style="font-size: 30px; color: #FF0033;"><a href = "index.html" class="custom-link">Back</a></p>
+            <p class="right" style="color: #FF0033;">&copy; FVRMusic</p>
+        </footer>

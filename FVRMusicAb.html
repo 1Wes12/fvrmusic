@@ -1,0 +1,226 @@
+<style>
+
+    /*body is classified for the main page*/
+        body {
+            background-color: #000000;
+            overflow-x: hidden;
+            font-family: "Orbitron", sans-serif;
+    }
+    
+    /*right I classified so I can align certain text to the right of the screen*/
+        .right {
+            text-align: right;
+            vertical-align: middle;
+    }
+    
+    /*center I classified so I can align certain text to the center of the screen*/
+        .center {
+            text-align: center;
+            vertical-align: middle;
+            justify-content: center;
+    }
+    /*testing-dropdown is the row of dropdowns*/
+        .dropdown {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+    }
+    /*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+        .footer{
+            margin-top: 20px;
+            text-align: center;
+    }
+    
+    /*container I made to allow the drop down boxes to be centered and attached to the title text*/
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+    
+    .custom-link {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        font-weight: bold; /* Makes it stand out */
+        cursor: pointer; /* Keeps it clickable */
+    }
+    
+    .custom-link_secondary {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        cursor: pointer; /* Keeps it clickable */
+    }
+
+    .top1 {
+        position: absolute;
+        top: 26;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 60px;
+        box-sizing: border-box;
+}
+
+.top2 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 190px;
+    box-sizing: border-box;
+}
+
+.top3 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 323px;
+    box-sizing: border-box;
+}
+
+.top4 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 598px;
+    box-sizing: border-box;
+}
+
+.top5 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 763px;
+    box-sizing: border-box;
+    }
+    
+    .top6 {
+        position: absolute;
+        top: 50;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+        }
+
+        .top7 {
+            position: absolute;
+            top: 26;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            margin-left: 985px;
+            box-sizing: border-box;
+        }
+
+    .logo1 {
+        top: 100;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block; /* Makes the background wrap around text */
+        background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+        color: white; /* Text color */
+        padding: 10px 15px; /* Space inside the box */
+        border-radius: 5px; /* Rounded edges */
+        text-decoration: none; /* Removes underline */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+ nav a:hover {
+        background-color: rgba(255, 0, 0, 0.7); /* Red hover effect */
+    }
+
+    .no-wrap {
+        white-space: nowrap;
+    }
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <nav>
+    <label for="Home">
+        <p class="top1" style="font-size: 30px; color:white;"><a href = "Index.html" class="custom-link">Home</a></p>
+        </label>
+        
+        <label for="About">
+        <p class="top2" style="font-size: 30px; color:white;"><a href = "FVRMusicAb.html" class="custom-link_secondary">About</a></p>
+        </label>
+        
+        <label for="New Releases">
+        <p class="top3" style="font-size: 30px; color:white;"><a href = "FVRMusicNewRel.html" class="custom-link_secondary">New Releases</a></p>
+        </label>
+        
+        <label for="Contact">
+        <p class="top4" style="font-size: 30px; color:white;"><a href = "FVRMusicEng.html" class="custom-link_secondary">Contact</a></p>
+        </label>
+
+        <label for="Listen Now">
+        <p class="top5" style="font-size: 30px; color:white;"><a href = "FVRMusicPlat.html" class="custom-link_secondary">Listen Now</a></p>
+        </label>
+
+        <label for="Creation">
+            <p class="top7" style="font-size: 30px; color: white;"><a href = "FVRMusicCr.html" class="custom-link_secondary">Creation</a></p>
+            </label>
+    </nav>
+        
+        <p class="logo1"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\FVRMusicNEWLOGO.jpg" alt="FVR Music" width="1920" height="300"></p>
+
+    <h1 style="color: #ffffff;">Wesley Russell, FVR Biography</h1>
+    <p style="color: #00FFFF; width: 50%; float: left;">I am a 17 year old kid that loves music. I have a big passion for music because it helps ease my mind.<br>
+    When I am going through tough times and I can't slow down the thoughts in my head, I write it down<br>
+    and make a song about it. I have gone through a lot lately and I think music is one of the main reasons<br>
+    of why I am still moving forward. When I feel a certain way I turn on a song that I made about that<br>
+    certain feeling, If I feel something I haven't felt before, I'll make a song about it to listen to. I don't just<br>
+    make them for the heck of it, I make it to help me and the other people get through this and know that<br>
+    they aren't alone in this cruel world. We all go through tough times, but we also are all strong enough<br>
+    to work through it and better yourself and the others around you.</p>
+    <p><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\fvr_logo_neon.png" alt="FVR Music" width="200" height="200"></p>
+
+    <h1 style="color: #ffffff;">Music Journey</h1>
+    <p style="color: #00FFFF; width: 50%; float: left;">I started making music in 2024, it was one of the best
+        decisions I have made. I love making music about<br>
+        my life including the problems I face, the mistakes I have made. I also enjoy making up stories to write<br>
+        about that gets you in the moment and some people could possibly/hopefully relate to. It is just a very<br>
+        big passion of mine and I would like to continue making songs no matter how big I am, it helps me and the<br> 
+        others that go through what I do. It's like a coping mechanism.</p>
+    <p><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\musickey.png" alt="FVR Music" width="200" height="200"></p>
+
+    <h1 style="color: #ffffff;">Why Do I Use AI and How</h1>
+    <p style="color: #00FFFF; width: 50%; float: left;">I use Suno to create my music. I write
+    all my lyrics in google docs and type out what genre, voices, and<br> 
+    instruments I would prefer in my music with the different verses. So it is still all original and all made by<br>
+    me. I use AI because I don't have a good voice. I can write good lyrics but I can't sing well. So I used what<br>
+    I'm good with, computers. I create and program my songs to be exactly how I want and need them to be.</p>
+    <p><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\AI_Robo.png" alt="FVR Music" width="200" height="200"></p>
+
+
+
+        <footer>
+            <p class = "center" style="font-size: 30px; color: #FF1493"><a href = "Index.html" class="custom-link">Back</a></p>
+            <p class="right" style="color: white;">&copy; FVRMusic</p>
+        </footer>
+    

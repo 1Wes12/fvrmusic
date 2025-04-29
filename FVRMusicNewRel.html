@@ -1,0 +1,260 @@
+<style>
+    /*body is classified for the main page*/
+        body {
+            background-color: #8000FF;
+            color: white;
+            overflow-x: hidden;
+            font-family: "Orbitron", sans-serif;
+    }
+    
+    /*right I classified so I can align certain text to the right of the screen*/
+        .right {
+            text-align: right;
+            vertical-align: middle;
+    }
+    
+    /*center I classified so I can align certain text to the center of the screen*/
+        .center {
+            text-align: center;
+            vertical-align: middle;
+    }
+    /*testing-dropdown is the row of dropdowns*/
+        .dropdown {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+    }
+    /*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+        .footer{
+            margin-top: 20px;
+            text-align: center;
+    }
+    
+    /*container I made to allow the drop down boxes to be centered and attached to the title text*/
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+    
+    .custom-link {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        font-weight: bold; /* Makes it stand out */
+        cursor: pointer; /* Keeps it clickable */
+    }
+    
+    .custom-link_secondary {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        cursor: pointer; /* Keeps it clickable */
+    }
+
+    .top1 {
+        position: absolute;
+        top: 26;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 20px;
+        box-sizing: border-box;
+}
+
+.top2 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 153px;
+    box-sizing: border-box;
+}
+
+.top3 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 288px;
+    box-sizing: border-box;
+}
+
+.top4 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 567px;
+    box-sizing: border-box;
+}
+
+.top5 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 737px;
+    box-sizing: border-box;
+    }
+    
+    .top6 {
+        position: absolute;
+        top: 50;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+        }
+
+        .no-wrap {
+            white-space: nowrap;
+    }
+
+    .top7 {
+        position: absolute;
+        top: 50;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+        }
+
+        .top8 {
+            position: absolute;
+            top: 26;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            margin-left: 964px;
+            box-sizing: border-box;
+        }
+
+    .musiclinks {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        top: 80;
+}
+
+.mental {
+    width: 100%;
+    padding: 150px;
+    gap: 5px;
+    word-spacing: 20px;
+}
+
+.embrace {
+    width: 100%;
+    padding: 150px;
+    gap: 5px;
+    word-spacing: 20px;
+}
+
+.change {
+    width: 100%;
+    padding: 150px;
+    gap: 5px;
+    word-spacing: 20px;
+}
+
+.another {
+    width: 100%;
+    padding: 150px;
+    gap: 5px;
+    word-spacing: 20px;
+}
+
+nav a {
+    display: inline-block; /* Makes the background wrap around text */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Space inside the box */
+    border-radius: 5px; /* Rounded edges */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #FF007F; /* Red hover effect */
+}
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <nav>
+    <label for="Home">
+        <p class="top1" style="font-size: 30px;"><a href = "index.html" class="custom-link">Home</a></p>
+        </label>
+        
+        <label for="About">
+        <p class="top2" style="font-size: 30px;"><a href = "FVRMusicAb.html" class="custom-link_secondary">About</a></p>
+        </label>
+        
+        <label for="New Releases">
+        <p class="top3" style="font-size: 30px;"><a href = "FVRMusicNewRel.html" class="custom-link_secondary">New Releases</a></p>
+        </label>
+        
+        <label for="Contact">
+        <p class="top4" style="font-size: 30px;"><a href = "FVRMusicEng.html" class="custom-link_secondary">Contact</a></p>
+        </label>
+
+        <label for="Listen Now">
+        <p class="top5" style="font-size: 30px;"><a href = "FVRMusicPlat.html" class="custom-link_secondary">Listen Now</a></p>
+        </label>
+
+        <label for="Creation">
+            <p class="top8" style="font-size: 30px;"><a href = "FVRMusicCr.html" class="custom-link_secondary">Creation</a></p>
+            </label>
+    </nav>
+        
+        <div>
+            <p class="another" style="font-size: 30px"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\Another_life.png" alt="Another Link" width="300" height="300">
+                <a href="https://open.spotify.com/album/42Gqc0L8p6P2qnESa5xLEo"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_spotify.png" alt="Spotify In Another Life Link" width="100" height="100"></a>
+                <a href="https://music.apple.com/us/album/in-another-life/1799103509"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_apple.png" alt="Apple Music In Another Life Link" width="100" height="100"></a>
+                <a href="https://music.amazon.com/albums/B0DYJY2SMH"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_amazon.png" alt="Amazon Music In Another Life Link" width="100" height="100"></a>
+                <a href="https://www.pandora.com/artist/fvr/in-another-life/ALxXklXZmbj7XKc"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_pandora.png" alt="Pandora In Another Life Link" width="100" height="100"></a>
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_mXdnkT8BHkFJHKtbp8dXscz5rK7kwqVqA"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_youtube.png" alt="Youtube Music In Another Life Link" width="100" height="100"></a></p>
+
+            <p class="mental" style="font-size: 30px"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\mental_para.png" alt="Mental Link" width="300" height="300">
+            <a href="https://open.spotify.com/album/2xLOd2DUTX4FXyqb11gT8s"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_spotify.png" alt="Spotify Mental Paralysis Link" width="100" height="100"></a>
+            <a href="https://music.apple.com/us/album/mental-paralysis/1795326930"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_apple.png" alt="Apple Music Mental Paralysis Link" width="100" height="100"></a>
+            <a href="https://music.amazon.com/albums/B0DW95M5PV"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_amazon.png" alt="Amazon Music Mental Paralysis Link" width="100" height="100"></a>
+            <a href="https://www.pandora.com/artist/fvr/mental-paralysis/ALdqcmZtP272whc"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_pandora.png" alt="Pandora Mental Paralysis Link" width="100" height="100"></a>
+            <a href="https://www.youtube.com/playlist?list=OLAK5uy_lsEMRJI1MfkHThlFXZ_nnpvW2-0l7uJDs"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_youtube.png" alt="Youtube Music Mental Paralysis Link" width="100" height="100"></a></p>
+
+            <p class="embrace" style="font-size: 30px"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\endless_em.png" alt="Embrace Link" width="300" height="300">
+                <a href="https://open.spotify.com/album/0tbxuTFXwB1O3xhuNtkW0a"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_spotify.png" alt="Spotify Endless Embrace Link" width="100" height="100"></a>
+                <a href="https://music.apple.com/us/album/endless-embrace/1791813960"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_apple.png" alt="Apple Music Endless Embrace Link" width="100" height="100"></a>
+                <a href="https://music.amazon.com/albums/B0DTHD1YC3"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_amazon.png" alt="Amazon Music Endless Embrace Link" width="100" height="100"></a>
+                <a href="https://www.pandora.com/artist/fvr/endless-embrace/ALXld7kmpgpPkpq"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_pandora.png" alt="Pandora Endless Embrace Link" width="100" height="100"></a>
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_kmE6LPPSoW3sd4iw3RDq5dertDXv7qgHA"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_youtube.png" alt="Youtube Music Endless Embrace Link" width="100" height="100"></a></p>
+
+                <p class="change" style="font-size: 30px"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\change_me.png" alt="Change Link" width="300" height="300">
+                    <a href="https://open.spotify.com/album/55C8n1wqp5ocjwEKMdjz07"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_spotify.png" alt="Spotify Change Me Link" width="100" height="100"></a>
+                    <a href="https://music.apple.com/us/album/change-me/1786940598"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_apple.png" alt="Apple Music Change Me Link" width="100" height="100"></a>
+                    <a href="https://music.amazon.com/albums/B0DR5NSTY1"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_amazon.png" alt="Amazon Music Change Me Link" width="100" height="100"></a>
+                    <a href="https://www.pandora.com/artist/fvr/change-me/ALrPxwVVPkljtpm"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_pandora.png" alt="Pandora Change Me Link" width="100" height="100"></a>
+                    <a href="https://www.youtube.com/playlist?list=OLAK5uy_kkleRMdZysjrUJZ-8XD9VmfUqfXwEXYu0"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_youtube.png" alt="Youtube Music Change Me Link" width="100" height="100"></a></p>
+        </div>
+
+        <footer>
+            <p class = "center" style="font-size: 30px; color: #FF0033;"><a href = "index.html" class="custom-link">Back</a></p>
+            <p class="right" style="color: #FF0033;">&copy; FVRMusic</p>
+        </footer>
+    

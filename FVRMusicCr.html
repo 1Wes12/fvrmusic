@@ -1,0 +1,254 @@
+<style>
+    /*body is classified for the main page*/
+        body {
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+            font-family: "Orbitron", sans-serif;
+    }
+    
+    /*right I classified so I can align certain text to the right of the screen*/
+        .right {
+            text-align: right;
+            vertical-align: middle;
+    }
+    
+    /*center I classified so I can align certain text to the center of the screen*/
+        .center {
+            text-align: center;
+            vertical-align: middle;
+    }
+    /*testing-dropdown is the row of dropdowns*/
+        .dropdown {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+    }
+    /*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+        .footer{
+            margin-top: 20px;
+            text-align: center;
+    }
+    
+    /*container I made to allow the drop down boxes to be centered and attached to the title text*/
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+        .sociallinks {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+    }
+
+        .no-wrap {
+            white-space: nowrap;
+    }
+
+        .spotify {
+            margin-left: 215px;
+    }
+        .apple {
+            margin-left: 215px;
+    }
+
+    .custom-link {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Uses the default text color */
+        font-weight: bold; /* Makes it stand out */
+        cursor: pointer; /* Keeps it clickable */
+    }
+
+      .centerno-wrap {
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+}
+    .amazon {
+        margin-left: 215px;
+}
+    .sound {
+        margin-left: 215px;
+}
+
+.pandora {
+    margin-left: 215px;
+}
+.youtube {
+    margin-left: 215px;
+}
+
+.footer{
+margin-top: 20px;
+text-align: center;
+}
+
+.top1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 20px;
+box-sizing: border-box;
+}
+
+.top2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 153px;
+box-sizing: border-box;
+}
+
+.top3 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 288px;
+box-sizing: border-box;
+}
+
+.top4 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 567px;
+box-sizing: border-box;
+}
+
+.top5 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+margin-left: 736px;
+box-sizing: border-box;
+}
+
+.top6 {
+position: absolute;
+top: 50;
+left: 0;
+width: 100%;
+padding: 10px;
+margin: 0;
+box-sizing: border-box;
+text-align: center;
+}
+
+.top7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 962px;
+    box-sizing: border-box;
+}
+
+
+.custom-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color */
+    font-weight: bold; /* Makes it stand out */
+    cursor: pointer; /* Keeps it clickable */
+}
+
+.custom-link_secondary {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color */
+    cursor: pointer; /* Keeps it clickable */
+}
+
+nav a {
+    display: inline-block; /* Makes the background wrap around text */
+    background-color: rgba(170, 0, 255, 0.306); /* Black with transparency */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Space inside the box */
+    border-radius: 5px; /* Rounded edges */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(136, 0, 255, 0.7); /* Red hover effect */
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between images */
+}
+.image-container img {
+    max-width: 100%; /* Adjust width as needed */
+    height: auto;
+}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <nav>
+        <label for="Home">
+            <p class="top1" style="font-size: 30px;"><a href = "index.html" class="custom-link">Home</a></p>
+            </label>
+            
+            <label for="About">
+            <p class="top2" style="font-size: 30px;"><a href = "FVRMusicAb.html" class="custom-link_secondary">About</a></p>
+            </label>
+            
+            <label for="New Releases">
+            <p class="top3" style="font-size: 30px;"><a href = "FVRMusicNewRel.html" class="custom-link_secondary">New Releases</a></p>
+            </label>
+            
+            <label for="Contact">
+            <p class="top4" style="font-size: 30px;"><a href = "FVRMusicEng.html" class="custom-link_secondary">Contact</a></p>
+            </label>
+            
+            <label for="Listen Now">
+            <p class="top5" style="font-size: 30px;"><a href = "FVRMusicPlat.html" class="custom-link_secondary">Listen Now</a></p>
+            </label>
+
+            <label for="Creation">
+                <p class="top7" style="font-size: 30px;"><a href = "FVRMusicCr.html" class="custom-link_secondary">Creation</a></p>
+                </label>
+            </nav>
+
+        <p><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_creation.jpg" alt="FVR Music" width="1920" height="300"></p>
+
+
+
+        <div class="image-container">
+            <a href="FvrMusicAnother.html"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\Another_life.png" alt="Another Life" width="300" height="300"></a>
+            <a href="FvrMusicMental.html"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\mental_para.png" alt="Mental Paralysis" width="300" height="300"></a>
+            <a href="FvrMusicEndless.html"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\endless_em.png" alt="Endless Embrace" width="300" height="300"></a>
+            <a href="FvrMusicChange.html"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\change_me.png" alt="Change Me" width="300" height="300"></a>
+
+        </div>
+            <footer>
+                <p class = "center" style="font-size: 30px; color: rgb(255, 0, 0);"><a href = "Index.html" class="custom-link">Back</a></p>
+                <p class="right" style="color: rgb(0, 242, 255);">&copy; FVRMusic</p>
+            </footer>

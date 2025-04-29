@@ -1,0 +1,248 @@
+<style>
+/*body is classified for the main page*/
+    body {
+        background-color: #8000FF;
+        color: white;
+        overflow-x: hidden;
+        font-family: "Orbitron", sans-serif;
+}
+
+/*right I classified so I can align certain text to the right of the screen*/
+    .right {
+        text-align: right;
+        vertical-align: middle;
+}
+
+/*center I classified so I can align certain text to the center of the screen*/
+    .center {
+        text-align: center;
+        vertical-align: middle;
+}
+/*testing-dropdown is the row of dropdowns*/
+    .dropdown {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+}
+/*footer I classified so the bottom of the page can be seperate from everything else on the screen (makes it easier on me)*/
+    .footer{
+        margin-top: 20px;
+        text-align: center;
+}
+
+/*container I made to allow the drop down boxes to be centered and attached to the title text*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+    .top1 {
+        position: absolute;
+        top: 26;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-left: 20px;
+        box-sizing: border-box;
+}
+
+.top2 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 150px;
+    box-sizing: border-box;
+}
+
+.top3 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 282px;
+    box-sizing: border-box;
+}
+
+.top4 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 557px;
+    box-sizing: border-box;
+}
+
+.top5 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 722px;
+    box-sizing: border-box;
+}
+
+.top6 {
+    position: absolute;
+    top: 26;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-left: 946px;
+    box-sizing: border-box;
+}
+
+.custom-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color */
+    font-weight: bold; /* Makes it stand out */
+    cursor: pointer; /* Keeps it clickable */
+}
+
+.custom-link_secondary {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the default text color */
+    cursor: pointer; /* Keeps it clickable */
+}
+
+nav a {
+    display: inline-block; /* Makes the background wrap around text */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Space inside the box */
+    border-radius: 5px; /* Rounded edges */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #00FFFF; /* Red hover effect */
+}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<nav>
+<label for="Home">
+<p class="top1" style="font-size: 30px;"><a href = "FVRMusic.html" class="custom-link">Home</a></p>
+</label>
+
+<label for="About">
+<p class="top2" style="font-size: 30px;"><a href = "FVRMusicAb.html" class="custom-link_secondary">About</a></p>
+</label>
+
+<label for="New Releases">
+<p class="top3" style="font-size: 30px;"><a href = "FVRMusicNewRel.html" class="custom-link_secondary">New Releases</a></p>
+</label>
+
+<label for="Contact">
+<p class="top4" style="font-size: 30px;"><a href = "FVRMusicEng.html" class="custom-link_secondary">Contact</a></p>
+</label>
+
+<label for="Listen Now">
+<p class="top5" style="font-size: 30px;"><a href = "FVRMusicPlat.html" class="custom-link_secondary">Listen Now</a></p>
+</label>
+
+<label for="Creation">
+<p class="top6" style="font-size: 30px;"><a href = "FVRMusicCr.html" class="custom-link_secondary">Creation</a></p>
+</label>
+</nav>
+
+
+<!--using the container class to allow all the drop downs and text to be centered and attached-->
+<div class="container">
+<!--head is the title of the website-->
+<head>
+<b>
+    <h1 class="center"><p style="font-size: 80px; color: #FF007F;">Welcome To FVR Music!</p>
+</b>
+    <p class="center"><input type="text" placeholder="Search..." />
+    <button>Search</button></p>
+    <p><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\FVRMusicLogoRevamp.jpg" alt="FVR Music" width="1920" height="300"></p></h1>
+</head>
+
+<!--using the testing-dropdown class so all drop downs have the code from that class applied the same way-->
+<!--I want the drop down boxes to link to another browser/page involving the topic chosen-->
+<div class="dropdown">
+<!--drop down box 1-->
+    <div>
+        <label for="dropbox1">
+        <p class="center" style="font-size: 50px; color: #00CED1;"><b>Social Media</b></p>
+        <p class="center"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_music.png" alt="Social Media" width="200" height="200"></p>
+        </label>
+        <p class="center" style="font-size: 30px;"><select id="pageSelect" onchange="navigatePage()"></p>
+        <option>Select</option>
+        <option value="FVRMusicPlat.html">Music Streaming</option>
+        <option value="FVRMusicEng.html">Engagement</option>
+        <option value="FVRMusicLive.html">Video & Livestreaming</option>
+    </select>
+</div>
+
+<script>
+    function navigatePage() {
+        var select = document.getElementById("pageSelect");
+        var selectedValue = select.value;
+
+        if (selectedValue) {
+            window.location.href = selectedValue;
+        }
+    }
+</script>
+
+<!--drop down box 2-->
+    <div>
+        <label for="dropbox2">
+        <p class="center" style="font-size: 50px; color: #00CED1;"><b>Music & Releases</b></p>
+        <p class="center"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\music_releases_PhotoShop_1.png" alt="Music & Releases" width="200" height="200"></p>
+        </label>
+        <p class="center" style="font-size: 30px;"><select id="pageSelect1" onchange="navigatePage1()"></p>
+        <option>Select</option>
+        <option value="FVRMusicNewRel.html">New Releases</option>
+        <option value="FVRMusicCr.html">Creation</option>
+        <option value="FVRMusicUp.html">Upcoming Projects</option>
+    </select>
+</div>
+
+<script>
+    function navigatePage1() {
+        var select = document.getElementById("pageSelect1");
+        var selectedValue = select.value;
+
+        if (selectedValue) {
+            window.location.href = selectedValue;
+        }
+    }
+</script>
+
+<!--drop down box 3-->
+    <div>
+        <label for="dropbox3">
+        <p class="center" style="font-size: 50px; color: #00CED1;"><b>Blog/News</b></p>
+        <p class="center"><img src = "C:\Users\B1\Documents\Web\MyProjects\FVR Music\FVRMusic Content\neon_micro.png" alt="Blog/News" width="200" height="200"></p>
+        </label>
+        <p class="center"><select id=<p class="center" style="font-size: 30px;">"droptest3"</p></p>>
+        <option value="1">Testing1</option>
+        <option value="2">Testing2</option>
+        <option value="3">Testing3</option>
+    </select>
+</div>
+</div>
+</div>
+
+<!--this is my footer class (creates the bottom of the website page)-->
+<footer>
+    <p class="right" style="color: #FF0033;">&copy; FVRMusic</p>
+</footer>
